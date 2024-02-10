@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.60rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color) !important;
+  border-radius: 0.5rem;
+}
+
+section {
+  padding: 50px;
+
+  .section-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-image: url('./assets/img/hero-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .hero-content {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    .subtitle {
+      margin-top: 80px;
+      margin-bottom: 0;
+      color: var(--white-color);
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      word-spacing: 5px;
+      font-family: 'Exo 2', sans-serif;
+      position: relative;
+      top: 5px;
+
+      span {
+        color: var(--black-color);
+      }
+    }
+
+    h1 {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 600;
+      color: var(--black-color);
+      font-size: 45px;
+      text-shadow: 2px 2px 5px #343434ce;
+
+      span {
+        color: var(--secondary-color);
+      }
+
+      &::after {
+        content: '';
+        width: 50%;
+        height: 3px;
+        background-color: var(--black-color);
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    .benefits {
+      padding-left: 15px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-family: 'Exo 2', sans-serif;
+
+      svg {
+        color: var(--secondary-color);
+        margin-right: 3px;
+      }
+    }
+
+    .btn-content {
+      padding: 15px 15px;
+
+      .book-btn {
+        border-radius: 5px;
+        padding: 8px 25px;
+        font-size: 16px;
+        background: var(--primary-color);
+        font-family: 'Exo 2', sans-serif;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        border: none;
+
+        &:hover {
+          background: var(--white-color) !important;
+          color: var(--primary-color);
+          box-shadow: 0 3px 10px var(--primary-color);
+        }
+      }
+    }
+  }
+}
