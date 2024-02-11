@@ -11,7 +11,7 @@ import WHOLogo from '../../../assets/img/sponsors/WHO-Logo.png'
 const Partner = () => {
     return (
         <>
-            <h1 className='section-title' data-attr='Our'>Sponsors</h1>
+            <h1 className='section-title' data-heading='Our'>Sponsors</h1>
 
             <div className='sponsor-content container'>
                 <div className='brand'>
@@ -26,7 +26,7 @@ const Partner = () => {
                 </div>
             </div>
 
-            <h1 className='section-title mt-5'>Inspired By</h1>
+            <h1 className='section-title mt-5' data-heading='Got'>Inspired By</h1>
 
             <div className='sponsor-content container'>
                 <div className='inspired-brand'>

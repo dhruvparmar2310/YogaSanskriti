@@ -1,5 +1,5 @@
 .about {
-    background: #1a679526;
+    background: #1a689525;
 
     .about-content {
         margin-top: 30px;
@@ -10,8 +10,20 @@
 
             img {
                 object-fit: contain;
-                // width: 450px;
                 border-radius: 10px;
+            }
+
+            .bg-design {
+                width: 100%;
+                position: absolute;
+                top: -90px;
+                left: 0px;
+                z-index: -11;
+                filter: opacity(0.3);
+
+                img {
+                    width: 90rem !important;
+                }
             }
 
             .design {
@@ -28,11 +40,12 @@
 
         .about-desc {
             text-align: justify;
-            font-family: 'Exo 2', sans-serif;
+            font-family: 'Salsa', cursive;
+            font-weight: 500;
 
             h4 {
                 color: var(--primary-color);
-                font-weight: 600;
+                font-weight: 500;
             }
 
             .line {
@@ -40,10 +53,15 @@
                 margin-bottom: 15px;
             }
 
+            ul {
+                list-style: none;
+                padding: 0;
+            }
             p {
+                font-size: 17px;
+                font-weight: 500;
                 span {
                     color: var(--primary-color);
-                    font-weight: 600;
                     letter-spacing: 0.5px;
                 }
             }
