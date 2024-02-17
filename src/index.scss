@@ -34,7 +34,6 @@ section {
   padding: 50px;
 
   .section-title {
-    margin-top: 30px;
     text-align: center;
     font-size: 30px;
     font-family: 'Salsa', cursive;
@@ -57,93 +56,96 @@ section {
 
 .hero {
   width: 100%;
+  overflow: hidden;
+  // max-width: 75rem;
   height: 100vh;
-  display: block;
-  background-image: url('./assets/img/yoga-2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
+  padding: 50px 0;
+  background: #78b9ff;
 
   .hero-content {
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(3px);
-    display: block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: auto;
-    padding: 30px;
-    background: #ffffff34;
-    margin-top: 70px;
+    background: #78b9ff;
     border-radius: 10px;
+    padding-top: 6.5rem;
 
-    .subtitle {
-      margin-bottom: 0;
-      font-size: 14px;
-      letter-spacing: 0.8px;
-      word-spacing: 5px;
-      font-family: 'Salsa', cursive;
-      position: relative;
-      top: 5px;
+    .ads-content {
+      padding: 1rem 3rem;
 
-      span {
-        color: var(--primary-color);
-      }
-    }
-
-    h1 {
-      font-family: 'Salsa', cursive;
-      font-weight: 500;
-      font-size: 45px;
-      text-shadow: 2px 2px 5px #343434ce;
-
-      span {
+      .subtitle {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        letter-spacing: 0.8px;
+        word-spacing: 5px;
         font-family: 'Salsa', cursive;
-        color: var(--primary-color);
-      }
+        position: relative;
+        top: 5px;
 
-      &::after {
-        content: '';
-        width: 50%;
-        height: 3px;
-        background-color: var(--primary-color);
-        display: block;
-        margin-top: 8px;
-        margin-bottom: 1.8rem;
-      }
-    }
-
-    .benefits {
-      padding-left: 15px;
-      margin-bottom: 5px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      font-size: 14px;
-      font-family: 'Salsa', cursive;
-
-      svg {
-        color: var(--primary-color);
-        margin-right: 3px;
-      }
-    }
-
-    .btn-content {
-      padding: 15px 15px;
-
-      .book-btn {
-        border-radius: 5px;
-        padding: 8px 25px;
-        font-size: 14px;
-        background: var(--primary-color);
-        font-family: 'Salsa', cursive;
-        text-transform: uppercase;
-        transition: all 0.3s ease-in-out;
-        border: none;
-
-        &:hover {
-          background: var(--white-color) !important;
-          color: var(--primary-color);
-          transform: translateY(-5px);
-          box-shadow: 0 3px 10px var(--primary-color);
+        span {
+          color: var(--white-color);
         }
+      }
+
+      h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 4.3rem;
+
+        span {
+          font-family: 'Salsa', cursive;
+          color: var(--primary-color);
+        }
+      }
+
+      .desc {
+        font-size: 25px;
+        margin: 0;
+        line-height: 1.8rem;
+        font-weight: 600;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: var(--white-color);
+      }
+
+      .btn-content {
+        padding: 15px 0px;
+
+        .book-btn {
+          border-radius: 99px;
+          padding: 10px 30px;
+          font-size: 1.1rem;
+          background: var(--primary-color);
+          font-family: 'Salsa', cursive;
+          text-transform: uppercase;
+          transition: all 0.3s ease-in-out;
+          border: none;
+
+          &:hover {
+            background: var(--white-color) !important;
+            color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 3px 10px var(--primary-color);
+          }
+        }
+      }
+    }
+
+    .img-content {
+      border-radius: 200px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      overflow: hidden;
+      width: 35rem;
+      height: 20rem;
+      margin: 30px 0;
+      display: block;
+
+      .bg {
+        transform: rotateY(180deg);
+        object-fit: cover;
       }
     }
   }

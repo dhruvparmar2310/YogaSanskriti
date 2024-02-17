@@ -1,36 +1,40 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import './App.css';
 import Header from './shared/component/Header';
-import { motion } from 'framer-motion'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 import { Button } from 'react-bootstrap'
 import AboutUs from './shared/component/About';
 import Partner from './shared/component/Partner';
 import Footer from './shared/component/Footer';
 import Courses from './shared/component/Courses';
 import Plans from './shared/component/Plans';
+import bgImg from './assets/img/yoga-1.jpg'
+import Contact from './shared/component/Contact';
 
 function App() {
   return (
     <>
      <Header />
 
-     <section className='hero mt-3' id='hero'>
-        <motion.div className='hero-content' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <p  className='subtitle'><span>YogaSanskriti</span> presents</p>
-          <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 0.8, ease: 'easeInOut' } }}>Onl<span>!</span>ne Yoga Class</motion.h1>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 0.5, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Reduce pain</motion.p>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 0.8, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Improve Stenght</motion.p>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 1, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Inprove flexibilty</motion.p>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 1.3, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Inprove Range of motion</motion.p>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 1.5, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Improve cardiovascular health</motion.p>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0,transition: { duration: 1.8, ease: 'easeInOut' } }} className='benefits'><FontAwesomeIcon icon={faCircleCheck} /> Improve Balance & co-ordination</motion.p>
+     <section className='hero' id='hero'>
+        <div className='hero-content'>
+          <div className='ads-content'>
+            <p  className='subtitle'><span>YogaSanskriti</span> presents</p>
 
-          <div className='btn-content'>
-            <Button className='book-btn'>Book Now</Button>
+            <h1>The top yoga and <br /> wellness platform.</h1>
+            <p className='desc mt-4'>Wherever, whenever, just for you. </p>
+            <p className='desc'>Spreading wellness since 2020.</p>
+
+            <div className='btn-content mt-3'>
+              <Button className='book-btn'>Book Now</Button>
+            </div>
           </div>
-        </motion.div>
+
+          <div className='img-content'>
+            <img src={bgImg} alt='' className='bg img-fluid' />
+          </div>
+        </div>
+
      </section>
 
      <section className='about' id='about'>
@@ -49,6 +53,9 @@ function App() {
       <Partner />
      </section>
 
+     <section className='contact' id='contact'>
+      <Contact />
+     </section>
      <Footer />
     </>
   );

@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import logo from '../../../assets/img/main-logo.jpg'
+import logo from '../../../assets/img/header-logo.png'
 import { FaLinkedinIn, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { Link } from 'react-scroll'
 
 const Header = () => {
     const [currSection, setCurrSection] = useState('')
@@ -9,14 +11,6 @@ const Header = () => {
         e.preventDefault()
         setCurrSection(data)
     }
-    // useEffect(() => {
-    //     if (location?.hash?.split('#')?.[1] === 'home' || currSection === '') {
-    //         setCurrSection(location?.hash?.split('#')?.[1])
-    //     }
-    //     setCurrSection(location?.hash?.split('#')?.[1])
-    // }, [currSection, location])
-
-    console.log(currSection)
     return (
         <>
             <header>
@@ -27,20 +21,20 @@ const Header = () => {
 
                     <ul className='nav-menu'>
                         <li className='nav-item'>
-                            <a href="#hero" onClick={(e) => handleSection(e, 'home')} className={`${currSection === '' || currSection === 'home' ? 'active' : ''}`}>Home</a>
+                            <Link className='menu-list-link' activeClass='active' to='hero' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#about" onClick={(e) => handleSection(e, 'about')} className={`${currSection === 'about' ? 'active' : ''}`}>About Us</a>
+                            <Link className='menu-list-link' activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500}>About Us</Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#course" onClick={(e) => handleSection(e, 'course')} className={`${currSection === 'course' ? 'active' : ''}`}>Courses</a>
+                            <Link className='menu-list-link' activeClass='active' to='course' spy={true} smooth={true} offset={-50} duration={500}>Courses</Link>
                         </li>
                         {/* testimonial */}
                         <li className='nav-item'>
-                            <a href="#sponsor" onClick={(e) => handleSection(e, 'sponsor')} className={`${currSection === 'sponsor' ? 'active' : ''}`}>Sponsorship</a>
+                            <Link className='menu-list-link' activeClass='active' to='sponsor' spy={true} smooth={true} offset={-50} duration={500}>Sponsorship</Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#contact" onClick={(e) => handleSection(e, 'contact')} className={`${currSection === 'contact' ? 'active' : ''}`}>Contact Us</a>
+                            <Link className='menu-list-link' activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500}>Contact Us</Link>
                         </li>
                     </ul>
 

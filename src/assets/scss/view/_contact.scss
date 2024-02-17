@@ -1,0 +1,85 @@
+.contact {
+    background: #1a689525;
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 320px 300px;
+        column-gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        .contact-info {
+            display: grid;
+            row-gap: 1rem !important;
+
+            .contact-card {
+                background: var(--white-color);
+                padding: 1rem;
+                border-radius: 0.5rem;
+                text-align: center;
+
+                .card-icon {
+                    font-size: 1.8rem;
+                    color: var(--primary-color);
+                    margin-bottom: 10px;
+                }
+
+                .card-title,
+                .card-data {
+                    font-size: 18px;
+                }
+
+                .card-title {
+                    font-weight: 600;
+                }
+
+                .card-data {
+                    display: block;
+                    color: #888888;
+                }
+
+                .contact-button {
+                    color: var(--primary-color);
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 0.25rem;
+                    cursor: pointer;
+
+                    .button-icon {
+                        font-size: 1rem;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        .button-icon {
+                            transform: translateX(0.25rem);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .contact-form {
+        width: 60%;
+        margin-top: 20px;
+
+        .input-container {
+            .form-control {
+                background-color: var(--white-color);
+
+                &::placeholder {
+                    color: #4d4d4d;
+                }
+            }
+
+            .invalid-feedback {
+                display: block;
+            }
+        }
+    }
+}

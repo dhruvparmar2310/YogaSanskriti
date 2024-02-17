@@ -1,7 +1,6 @@
 import React from 'react'
 import aboutImg from '../../../assets/img/about.jpg'
 import { Col, Row } from 'react-bootstrap'
-import bgImg from '../../../assets/img/bg-img-removebg-preview.png'
 
 const AboutUs = () => {
     return (
@@ -14,9 +13,7 @@ const AboutUs = () => {
                         <div className='about-img'>
                             <img src={aboutImg} className='img-fluid' alt="" />
                             <div className='design'></div>
-                            <div className='bg-design'>
-                                <img src={bgImg} alt="" className='img-fluid' />
-                            </div>
+                            <div className='bg-design'></div>
                         </div>
                     </Col>
                     <Col lg={6} md={12} className='mt-lg-0 mt-3'>
