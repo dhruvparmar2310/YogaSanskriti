@@ -10,12 +10,12 @@
         .company-intro {
             width: 100%;
             text-align: center;
-    
+
             img {
                 object-fit: contain;
                 width: 110px;
             }
-    
+
             p {
                 font-size: 11px;
                 color: #828282;
@@ -24,19 +24,19 @@
                 word-break: break-all;
             }
         }
-    
+
         .useful-links {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
             margin-top: 15px;
-    
+
             .heading {
                 font-family: 'Salsa', cursive;
                 color: var(--primary-color);
                 margin: 0;
                 margin-bottom: 5px;
-    
+
                 &::after {
                     content: '';
                     width: 100%;
@@ -45,30 +45,30 @@
                     display: block;
                 }
             }
-    
+
             .social-icons {
                 ul {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-    
+
                     svg {
                         font-size: 18px;
                         color: var(--white-color);
                     }
                 }
             }
-    
+
             ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
-    
+
                 svg {
                     color: var(--primary-color);
                     font-size: 12px;
                 }
-    
+
                 span {
                     font-size: 13px;
                     letter-spacing: 1px;
@@ -84,6 +84,7 @@
         margin-top: 25px;
         text-align: center;
         line-height: 10px;
+
         p {
             font-family: 'Salsa', cursive;
             display: block;
@@ -119,4 +120,25 @@
             }
         }
     }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        .footer-content {
+            flex-direction: column;
+
+            .useful-links {
+                flex-direction: column;
+                row-gap: 15px;
+
+                .social-icons {
+                    ul {
+                        justify-content: start;
+                        column-gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -11,8 +11,14 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 100;
     box-shadow: 0 5px 10px #4e4e4e45;
+
+    .mobMenu {
+        display: none;
+        position: absolute;
+        right: 1.5rem;
+    }
 
     .nav-menu {
         display: flex;
@@ -25,6 +31,51 @@
 
         .nav-item {
             .menu-list-link {
+                text-decoration: none;
+                font-size: 1rem;
+                font-family: 'Salsa', cursive;
+                letter-spacing: 0.5px;
+                color: var(--primary-color);
+                cursor: pointer;
+
+                &.active {
+                    color: var(--secondary-color);
+                    padding-bottom: 0.2rem;
+                    border-bottom: 2px solid var(--primary-color);
+                }
+
+                &:hover {
+                    color: var(--secondary-color);
+                    padding-bottom: 0.2rem;
+                    border-bottom: 2px solid var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .mobile-nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        flex-direction: column;
+        top: 4rem;
+        right: 2rem;
+        z-index: 2000;
+        height: fit-content;
+        min-width: 85%;
+        box-shadow: 0 0 20px #00000087;
+        border-radius: 1rem;
+        background: var(--white-color);
+        gap: 0;
+
+        .mobile-nav-item {
+            margin: 15px 0;
+
+            .mobile-menu-list-link {
                 text-decoration: none;
                 font-size: 1rem;
                 font-family: 'Salsa', cursive;
@@ -75,4 +126,28 @@
             height: 3rem;
         }
     }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        overflow: visible;
+
+        .mobMenu {
+            display: block;
+
+            svg {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        .nav-menu {
+            display: none;
+        }
+
+        .social-icons {
+            display: none;
+        }
+    }
+
 }

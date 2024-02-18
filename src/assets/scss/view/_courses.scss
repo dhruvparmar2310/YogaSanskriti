@@ -119,3 +119,14 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .course {
+        overflow: hidden;
+        box-sizing: border-box;
+
+        .course-list {
+            margin-top: 30px !important;
+        }
+    }
+}

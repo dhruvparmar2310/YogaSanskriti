@@ -58,7 +58,6 @@ section {
   width: 100%;
   overflow: hidden;
   // max-width: 75rem;
-  height: 100vh;
   position: relative;
   padding: 50px 0;
   background: #78b9ff;
@@ -146,6 +145,163 @@ section {
       .bg {
         transform: rotateY(180deg);
         object-fit: cover;
+      }
+    }
+  }
+}
+
+// very large display
+@media (min-width: 1400px) and (max-width: 1950px) {
+  .hero {
+    padding: 50px 0;
+
+    .hero-content {
+      padding-top: 5.5rem;
+
+      .ads-content {
+        .subtitle {
+          font-size: 1.8rem;
+        }
+
+        h1 {
+          font-size: 85px;
+          line-height: 5.5rem;
+        }
+
+        .desc {
+          line-height: 3rem;
+          font-size: 35px;
+        }
+
+        .btn-content {
+          margin-top: 20px !important;
+
+          .book-btn {
+            font-size: 2rem;
+            padding: 15px 40px;
+          }
+        }
+      }
+
+      .img-content {
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
+        width: 52rem;
+        height: 30rem;
+        margin: 50px 0;
+      }
+    }
+  }
+}
+
+// extra extra large (desktop)
+@media (max-width: 1400px) {}
+
+// extra large (laptops)
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .hero {
+    padding: 25px 0;
+
+    .hero-content {
+      padding-top: 5.5rem;
+
+      .ads-content {
+        .subtitle {
+          font-size: 1rem;
+        }
+
+        h1 {
+          font-size: 50px;
+          line-height: 3.3rem;
+        }
+
+        .desc {
+          line-height: 1.5rem;
+          font-size: 18px;
+        }
+
+        .btn-content {
+          margin-top: 5px !important;
+
+          .book-btn {
+            font-size: 0.9rem;
+            padding: 10px 25px;
+          }
+        }
+      }
+
+      .img-content {
+        width: 30rem;
+        height: 18rem;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+// large (laptop or Tab)
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+// medium (Tab)
+@media (min-width: 768px) and (max-width: 992px) {}
+
+// small (mobile or Tablet)
+@media (min-width: 576px) and (max-width: 768px) {}
+
+// very small (mobile)
+@media (max-width: 576px) {
+  section {
+    padding: 30px 20px;
+
+    .section-title {
+      font-size: 25px;
+
+      &::before {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .hero {
+    padding: 25px 0;
+
+    .hero-content {
+      padding-top: 5.5rem;
+      flex-direction: column;
+
+      .ads-content {
+        padding: 10px 25px;
+
+        .subtitle {
+          font-size: 15px;
+        }
+
+        h1 {
+          font-size: 37px;
+          line-height: 2.5rem;
+        }
+
+        .desc {
+          line-height: 1.2rem;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+        }
+
+        .btn-content {
+          margin-top: 5px !important;
+
+          .book-btn {
+            font-size: 13px;
+            padding: 5px 15px;
+          }
+        }
+      }
+
+      .img-content {
+        width: 95%;
+        height: 15rem;
+        margin: 5px 0;
+        margin-left: 20px;
       }
     }
   }

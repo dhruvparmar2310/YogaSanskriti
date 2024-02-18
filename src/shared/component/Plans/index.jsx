@@ -18,7 +18,7 @@ const Plans = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={6}>
+                    <Col lg={3} md={6} sm={6} className='mt-lg-0 mt-5'>
                         <div className='plan-card'>
                             <h2>3 Months</h2>
                             <div className='card-body'>

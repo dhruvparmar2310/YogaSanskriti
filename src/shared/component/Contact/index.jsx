@@ -13,7 +13,8 @@ const Contact = () => {
 
     function onSubmit (data) {
         console.log('data :>> ', data)
-        // href={`https://wa.me/9586627577?text=Hello%20there,%20I'am%20${watch('sName')}%20and%2C%20I%20wanted%20to%20discuss%20about%20${watch('sSubject')}%20that,%20${watch('sMessage')}`}
+        //     href = {`https://wa.me/7984377793?text=Hello%20there,%20I'am%20${watch('sName')}%20and%2C%20I%20wanted%20to%20discuss%20about%20${watch('sSubject')}%20that,%20${watch('sMessage')}`
+        // }
     }
 
     return (
@@ -27,7 +28,7 @@ const Contact = () => {
                             <IoMdMail className='card-icon' />
 
                             <h3 className="card-title">Email</h3>
-                            <span className="card-data">dhanparmar23@gmail.com</span>
+                            <span className="card-data">darshanparmar680@gmail.com</span>
                         </div>
                     </div>
 
@@ -36,7 +37,7 @@ const Contact = () => {
                             <FaWhatsapp className='card-icon' />
 
                             <h3 className="card-title">Whatsapp</h3>
-                            <span className="card-data">9586627577</span>
+                            <span className="card-data">+91 7984-377-793</span>
                         </div>
                     </div>
                 </div>
